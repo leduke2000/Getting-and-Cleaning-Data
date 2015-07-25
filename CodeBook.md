@@ -1,6 +1,6 @@
 ## Project description ##
 
-The project is a to get data on sport activities collected from smartphone's accelerometers (see [1]) and to transform it into a tidy dataset.
+The project is to get data on sport activities collected from smartphone's accelerometers (see [1]) and to transform it into a tidy dataset of mean values of certains measurements.
 
 
 ## Raw data ##
@@ -24,28 +24,31 @@ One variable corresponds to one column, one observation is stored in one row. Th
 
 The subject number is stored in numerical variable 'subject', there are 30 subjects.
 The activity name is stored in factor variable 'activity', there are 6 activities:
-WALKING
-WALKING_UPSTAIRS
-WALKING_DOWNSTAIRS
-SITTING
-STANDING
-LAYING
+- WALKING
+- WALKING_UPSTAIRS
+- WALKING_DOWNSTAIRS
+- SITTING
+- STANDING
+- LAYING
 
 All other measurements are stored in numerical form and represent mean values of mean and standard deviation of  values calculated by dataset creators form accelerometer data. 
 
+All measurement are normalised and bounded between 1- and 1,
+
 There are two types of data among measurements time data and frequency data obtained from time data processing by Fast Fourier Transformation. The first letter in variable name indicates it's type.
-t stands for time domain data
-f stands for frequency domain data
+- t stands for time domain data
+- f stands for frequency domain data
 
 Most of variables concern body-related measurements, but variables starting with 'Gravity' contain gravity acceleration signal. There are triaxial measurements of gravity with axis label at the end of variable name as in 'tGravityAcc_mean_X' and calculation of magnitude of gravity, stored in variable including GyroMag in the name. 
 
 Body-related measurements include triaxial measurements of:
-Acceleration - labeled Acc
-Acceleration jerk - labeled AccJerk
-Angular velocity - labeled Gyro
-Angular velocity jerk - labeled GyroJerk
+- Acceleration - labeled Acc
+- Acceleration jerk - labeled AccJerk
+- Angular velocity - labeled Gyro
+- Angular velocity jerk - labeled GyroJerk
 
 The axis name is at the end of variable name.
+
 
 Body-related measurement include also the calculated magnitude of measured triaxial values, stored in variables including Mag in their name.
 
