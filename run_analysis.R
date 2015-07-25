@@ -1,6 +1,4 @@
 # Course Project Getting and Cleaning Data 
-setwd("C:/A/Work/Séminiares/Coursera/Data Science/Getting And Cleaning Data/CourseProject")
-library(dplyr)
 if(!file.exists("UCI HAR Dataset"))
 {     
   url_a<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
